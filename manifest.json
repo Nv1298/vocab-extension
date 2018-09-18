@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "app",
+  "description": "none",
+  "version": "1",
+  "author": "none",
+  "web_accessible_resources": [
+   "Documents/newfolder/voc.html"
+  ],
+  "permissions": [
+        "webRequest", "webRequestBlocking", "https://www.facebook.com/"
+    ],
+  "background":{"scripts": ["background.js"]}
+}

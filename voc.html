@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+</head>
+<style>
+  body{
+    background-color: lightblue;
+  }
+  b{
+    font-weight: bold;
+  }
+  table{
+    width: 300px;
+    height: 1200px;
+    position: absolute;
+    left: 200px;
+    top:150px;
+    z-index: 3;
+    background-color: #459e6d;
+    padding:50px;
+    color: white;
+    font-size:25px;
+    font-family: 'Rubik', sans-serif;
+  }
+  #back{
+    background-color: #E8E8E8;
+    position: absolute;
+    z-index: 1;
+    left: 200px;
+    top: 100px;
+    width: 1005px;
+    height: 900px;
+    border-radius:30px;
+  }
+  #screen{
+    background-color: #F5FFFA;
+    position: absolute;
+    z-index: 2;
+    left: 200px;
+    top: 150px;
+    width: 1000px;
+    height: 900px;
+  }
+  #header{
+    position: absolute;
+    top: 30px;
+    left: 520px;
+    font-size:60px;
+    color: #459e6d;
+    font-family: 'Lora', serif;
+    z-index: 3;
+  }
+  #card1{
+    background-color:#F5FFFA;
+    position: absolute;
+    z-index: 3;
+    border-bottom: 2px solid lightgrey;
+    width: 700px;
+    height:170px;
+    top:150px;
+    left: 500px;
+    padding-top: 30px;
+    padding-left: 5px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+  }
+  #card2{
+    background-color:#F5FFFA;
+    position: absolute;
+    z-index: 3;
+    border-bottom: 2px solid lightgrey;
+    width: 700px;
+    height:170px;
+    top:353px;
+    left: 500px;
+    padding-top: 30px;
+    padding-left: 5px;
+     font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+  }
+  #card3{
+    background-color:#F5FFFA;
+    position: absolute;
+    z-index: 3;
+    border-bottom: 2px solid lightgrey;
+    width: 700px;
+    height:170px;
+    top:555px;
+    left: 500px;
+    padding-top: 30px;
+    padding-left: 5px;
+     font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+  }
+  #card4{
+    background-color:#F5FFFA;
+    position: absolute;
+    z-index: 3;
+    border-bottom: 2px solid lightgrey;
+    width: 700px;
+    height:170px;
+    top:757px;
+    left: 500px;
+    padding-top: 30px;
+    padding-left: 5px;
+     font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+  }
+  #card5{
+    background-color:#F5FFFA;
+    position: absolute;
+    z-index: 3;
+    border-bottom: 2px solid lightgrey;
+    width: 700px;
+    height:170px;
+    top:959px;
+    left: 500px;
+    padding-top: 30px;
+    padding-left: 5px;
+     font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+  }
+  #card6{
+    background-color:#F5FFFA;
+    position: absolute;
+    z-index: 3;
+    border-bottom: 2px solid lightgrey;
+    width: 700px;
+    height:160px;
+    top:1161px;
+    left: 500px;
+    padding-top: 30px;
+    padding-left: 5px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+  }
+  #slider1 {
+    position: absolute;
+    top: 180px;
+    left: 1220px;
+    width: 150px;
+    height: 150px;
+    opacity: 0.4;
+    background-color:#E8E8E8; 
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    border-radius: 10px;
+    z-index:0;
+}
+
+#slider2 {
+    position: absolute;
+    top: 380px;
+    left: 1220px;
+    width: 150px;
+    height: 150px;
+    opacity: 0.4;
+    background-color:#E8E8E8; 
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    border-radius: 10px;
+    z-index:0;
+}
+
+#slider3 {
+    position: absolute;
+    top: 580px;
+    left: 1220px;
+    width: 150px;
+    height: 150px;
+    opacity: 0.4;
+    background-color:#E8E8E8; 
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    border-radius: 10px;
+    z-index:0;
+}
+
+#slider4 {
+    position: absolute;
+    top: 780px;
+    left: 1220px;
+    width: 150px;
+    height: 150px;
+    opacity: 0.4;
+    background-color:#E8E8E8; 
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    border-radius: 10px;
+    z-index:0;
+}
+
+#slider5 {
+    position: absolute;
+    top: 980px;
+    left: 1220px;
+    width: 150px;
+    height: 150px;
+    opacity: 0.4;
+    background-color:#E8E8E8; 
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    border-radius: 10px;
+    z-index:0;
+
+}
+
+#slider6 {
+    position: absolute;
+    top: 1180px;
+    left: 1220px;
+    width: 150px;
+    height: 150px;
+    opacity: 0.4;
+    background-color:#E8E8E8; 
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    border-radius: 10px;
+    z-index:0;
+}
+  .slide-in {
+     animation: slide-in 0.5s forwards;
+     -webkit-animation: slide-in 0.5s forwards;
+  }
+
+.slide-out {
+    animation: slide-out 0.5s forwards;
+    -webkit-animation: slide-out 0.5s forwards;
+}
+    
+@keyframes slide-in {
+    100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+    100% { -webkit-transform: translateX(0%); }
+}
+    
+@keyframes slide-out {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes slide-out {
+    0% { -webkit-transform: translateX(0%); }
+    100% { -webkit-transform: translateX(-100%); }
+}
+
+#red{
+  background-color: #ff471a;
+  position: absolute;
+  z-index: 4;
+  top: 115px;
+  left: 220px;
+  width: 15px;
+  height: 15px;
+  border-radius: 40px;
+}
+#yellow{
+  background-color: #ffad33;
+  position: absolute;
+  z-index: 4;
+  top: 115px;
+  left: 245px;
+  width: 15px;
+  height: 15px;
+  border-radius: 40px;
+}
+#green{
+  background-color: #00b300;
+  position: absolute;
+  z-index: 4;
+  top: 115px;
+  left: 270px;
+  width: 15px;
+  height: 15px;
+  border-radius: 40px;
+}
+</style>
+<body>
+<div id="back"></div>
+<div id="screen"></div>
+<div id="header">Vocab Corner</div>
+<table>
+    <tr>
+      <td id="word1"></td>
+    </tr>
+    <tr>
+      <td id="word2"></td>
+    </tr>
+    <tr>
+      <td id="word3"></td>
+    </tr>
+    <tr>
+      <td id="word4"></td>
+    </tr>
+    <tr>
+      <td id="word5"></td>
+    </tr>
+    <tr>
+      <td id="word6"></td>
+    </tr>
+</table>
+<div id="card1"></div>
+<div id="card2"></div>
+<div id="card3"></div>
+<div id="card4"></div>
+<div id="card5"></div>
+<div id="card6"></div>
+
+<div id="slider1" class="slide-out"></div>
+<div id="slider2" class="slide-out"></div>
+<div id="slider3" class="slide-out"></div>
+<div id="slider4" class="slide-out"></div>
+<div id="slider5" class="slide-out"></div>
+<div id="slider6" class="slide-out"></div>
+
+<div id="red"></div>
+<div id="green"></div>
+<div id="yellow"></div>
+
+<script type="text/javascript" src="text.js"></script>
+<script type="text/javascript" src="words.js"></script>
+<script type="text/javascript" src="prons.js"></script>
+<script type="text/javascript" src="sent.js"></script>
+<script type="text/javascript" src="sample.js"></script>
+<script type="text/javascript" src="insert.js"></script>
+<script type="text/javascript" src="slide.js"></script>
+</body>
+</html>
+
+

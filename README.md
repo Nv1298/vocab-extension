@@ -9,7 +9,9 @@ Can be found at https://chrome.google.com/webstore/detail/vocab-corner/pknlacpgo
 - voc.html
 - insert.js: insert code into html file
 - slide.js: sliders
+
 ### Populate Data
+The extension uses the wrapper.py file to update the data, which can also be found in ox-dictionary repository
 Can populate the data for synonym.js, antonym.js, sent.js, words.js,text.js ... with the suites
 - aSuite.py - populate antonym.js with antonyms
 - eSuite.py - populate sent.js with sentences

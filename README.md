@@ -4,8 +4,11 @@
 Can be found at https://chrome.google.com/webstore/detail/vocab-corner/pknlacpgoncbagflkkghlpofibmfggbf 
 
 ## Files
-background.js
-manifest.json
+-background.js
+-manifest.json
+-voc.html
+-insert.js: insert code into html file
+-slide.js: sliders
 ### Populate Data
 Can populate the data for synonym.js, antonym.js, sent.js, words.js,text.js ... with the suites
 - aSuite.py - populate antonym.js with antonyms

@@ -1,8 +1,11 @@
 # vocab-extension
 
 ### Setup
-Download all of the files and turn on the extension on chrome
+Can be found at https://chrome.google.com/webstore/detail/vocab-corner/pknlacpgoncbagflkkghlpofibmfggbf 
 
+## Files
+background.js
+manifest.json
 ### Populate Data
 Can populate the data for synonym.js, antonym.js, sent.js, words.js,text.js ... with the suites
 - aSuite.py - populate antonym.js with antonyms

@@ -1,8 +1,5 @@
 # vocab-extension
 
-### Setup
-Can be found at https://chrome.google.com/webstore/detail/vocab-corner/pknlacpgoncbagflkkghlpofibmfggbf 
-
 ## Files
 - background.js
 - manifest.json
